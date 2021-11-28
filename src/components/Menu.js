@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import LOGO from '../assets/img/logo.png';
 const Menu = () => {
     return(
         <div className="class-Menu">
-            Menu
+            <img src={LOGO} alt={LOGO} />
             <ul>
                 <li>
                     <Link to="/">
