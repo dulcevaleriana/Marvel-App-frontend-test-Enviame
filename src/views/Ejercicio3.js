@@ -5,8 +5,9 @@ import '../assets/css/style.scss';
 
 const Ejercicio3 = () => {
     const [marvelData, setMarvelData] = useState([]);
-    const [heroeName, setheroeName] = useState("");
-
+    const [heroName, setheroName] = useState("");
+    const [statusEdit, setStatusEdit] = useState(false);
+ 
     const getData = async () => {
         try{
           let data = await getMarvelCharathers();
@@ -18,41 +19,26 @@ const Ejercicio3 = () => {
           }
           console.log(errorMessage);
         }
-      }
-
-      const editHeroe = (heroeid) =>{
-        return(
-            <>
-                {marvelData.filter(heroes => heroes.id.includes(heroeid)).map((item, key)=>(
-                    <ul key={key}>
-                        <li><img src={item.thumbnail.path + "." + item.thumbnail.extension} alt={item.thumbnail.path + "." + item.thumbnail.extension}/></li>
-                        <li><input value={item.name} /></li>
-                        <li>{item.description}</li>
-                        <li>{ChangeDateFormat(item.modified)}</li>
-                        <li><button onClick={editHeroe(item.id)}>"Save it"</button></li>
-                    </ul>
-                ))}
-            </>
-        )
-      }
+    }
     
-      useEffect(() => {
-        getData();// eslint-disable-next-line react-hooks/exhaustive-deps
-      },[]);
+    useEffect(() => {
+        getData();
+    },[]);
 
     return(
         <div className="class-Ejercicio3">
-            <input onChange={(a) => setheroeName(a.target.value)} type="text" placeholder="find a hero"/>
+            <input onChange={(a) => setheroName(a.target.value)} type="text" placeholder="find a hero"/>
             <button>search</button>
+
             {marvelData !== null ? (
                 <>
-                    {marvelData.filter(heroe => heroe.name.includes(heroeName)).map((item, key)=>(
+                    {marvelData.filter(hero => hero.name.includes(heroName)).map((item, key)=>(
                         <ul key={key}>
                             <li><img src={item.thumbnail.path + "." + item.thumbnail.extension} alt={item.thumbnail.path + "." + item.thumbnail.extension}/></li>
-                            <li>{item.name}</li>
-                            <li>{item.description === "" ? "this hero don't have a description add one here!!" : item.description}</li>
+                            <li><input placeholder={item.name} className={statusEdit ? "" : "class-disabled"}/></li>
+                            <li><input placeholder={item.description === "" ? "this hero don't have a description add one here!!" : item.description} className={statusEdit ? "" : "class-disabled"}/></li>
                             <li>{ChangeDateFormat(item.modified)}</li>
-                            <li><button onClick={editHeroe(item.id)}>"Edit Hero"</button></li>
+                            <li><button onClick={statusEdit ? (()=>setStatusEdit(false)) : (()=>setStatusEdit(true))}>"Edit Hero"</button></li>
                         </ul>
                     ))}
                 </>
