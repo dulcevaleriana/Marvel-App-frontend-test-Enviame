@@ -27,6 +27,25 @@
         justify-content: center;
         z-index: 9;
     }
+
+    .class-Ejercicio1 .MuiFormControl-root.css-18mw8gn-MuiFormControl-root {
+        display: grid;
+        grid-template-columns: auto !important;
+        width: 100% !important;
+
+        h4,
+        div:nth-child(2) {
+            grid-column: 1 !important;
+        }
+
+        div:nth-child(3) {
+            grid-column: 2;
+        }
+
+        button{
+            grid-column: 1 / span 2;
+        }
+    }
 }
 
 /*iPad, Nexus 9 – 1*/
@@ -57,6 +76,32 @@
     .class-Ejercicio3 > div:nth-child(2) .class-CardHero {
         min-width: auto;
         min-height: 250px;
+    }
+    .class-Ejercicio1 .MuiFormControl-root.css-18mw8gn-MuiFormControl-root {
+        display: grid;
+        grid-template-columns: auto !important;
+        width: 100% !important;
+
+        h4,
+        div:nth-child(2),
+        div:nth-child(3),
+        button {
+            grid-column: 1 !important;
+        }
+    }
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAlert-root.MuiAlert-standardError.MuiAlert-standard.css-145dpyk-MuiPaper-root-MuiAlert-root,
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAlert-root.MuiAlert-standardInfo.MuiAlert-standard.css-7uysqn-MuiPaper-root-MuiAlert-root {
+        width: calc(100vw - 80px);
+    }
+
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAlert-root.MuiAlert-standardInfo.MuiAlert-standard.css-7uysqn-MuiPaper-root-MuiAlert-root {
+        height: calc(100% - 50px);
+        font-size: 20pt;
+        justify-content: center;
+
+        svg {
+            font-size: 50pt;
+        }
     }
 }
 
