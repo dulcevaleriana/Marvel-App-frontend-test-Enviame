@@ -5,3 +5,14 @@ $background-image: "../img/background.png";
 $red-color: red;
 $black-color: black;
 $color-semi-white: #f5f5f5;
+
+//font
+@font-face {
+    font-family: Calibri;
+    src: url("../font/Calibri.ttf");
+}
+
+@font-face {
+    font-family: Tungsten-Book;
+    src: url("../font/Tungsten-Book.ttf");
+}
