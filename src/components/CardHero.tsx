@@ -18,7 +18,7 @@ const CardHero = (props:{
                 <input placeholder={props.name} className={props.statusEdit ? "" : "class-disabled"}/>
                 <p>{ChangeDateFormat(props.dateFormat)}</p>
                 <textarea rows={3} placeholder={props.description === "" ? "this hero don't have a description add one here!!" : props.description} className={props.statusEdit ? "" : "class-disabled"}/>
-                <button onClick={props.statusEdit ? (()=>props.boolFalse()) : (()=>props.boolTrue())}>"Edit Hero"</button>
+                <button onClick={props.statusEdit ? (()=>props.boolFalse()) : (()=>props.boolTrue())}>{props.statusEdit ? "Save hero" : "Edit Hero"}</button>
             </div>
         </div>
     )

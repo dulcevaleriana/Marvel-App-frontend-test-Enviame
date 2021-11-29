@@ -36,6 +36,32 @@ html {
     }
 }
 
+form.MuiBox-root.css-0 {
+    padding: 0 25px;
+
+    .MuiFormControl-root.css-18mw8gn-MuiFormControl-root {
+        display: grid;
+        grid-template-columns: 400px 100px;
+        width: calc(100vw - 50px);
+
+        h4 {
+            grid-column: 1 / span 2;
+            color: white;
+            font-size: 16pt;
+        }
+
+        input.MuiOutlinedInput-input.MuiInputBase-input.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+            background: #030226b3;
+            color: white;
+        }
+
+        button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root {
+            background: red;
+            border-radius: 0 !important;
+        }
+    }
+}
+
 .class-Ejercicio3 {
     display: grid;
     grid-template-rows: 170px calc(100vh - 96px - 170px);
@@ -64,20 +90,55 @@ html {
             }
 
             > div:nth-child(2){
-                grid-template-columns: 50% 50%;
+                grid-template-columns: calc(50% - 10px) calc(50% - 10px);
                 display: grid;
-                grid-template-rows: 42px 100% 43px;
+                grid-template-rows: 43px calc(100%);
+                color: white;
+                gap: 10px;
+                padding-left: 10px;
+                padding-top: 10px;
+                font-size: 9.5pt;
+
+                input,
+                textarea {
+                    background: #2b16898c;
+                    border: none;
+                    padding-left: 10px;
+                }
 
                 input.class-disabled,
                 textarea.class-disabled {
                     background: transparent;
                     border: none;
-                    color: white !important;
                 }
 
                 textarea {
                     grid-column: 1 / span 2;
                 }
+
+                button {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100px;
+                    height: 40px;
+                    background: red;
+                    border: none;
+                    color: white;
+                }
+
+                ::placeholder {
+                    color: white;
+                    opacity: 1; 
+                  }
+                  
+                  :-ms-input-placeholder { 
+                    color: white;
+                  }
+                  
+                  ::-ms-input-placeholder { 
+                    color: white;
+                  }
             }
         }
     }
