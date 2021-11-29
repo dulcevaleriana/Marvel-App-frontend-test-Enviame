@@ -3,6 +3,7 @@ import {getMarvelCharathers} from '../js/getMarvelCharathers';
 import '../assets/css/style.scss';
 import CardHero from '../components/CardHero';
 import Form from '../components/Form';
+import { Alert } from '@mui/material';
 
 const Ejercicio3 = () => {
     const [marvelData, setMarvelData] = useState<any | null>(null);
@@ -55,7 +56,7 @@ const Ejercicio3 = () => {
             )
             :
             (
-                <>Ejercicio3</>
+                <Alert severity="info">Wait a minute please!</Alert>
             )}
             
         </div>

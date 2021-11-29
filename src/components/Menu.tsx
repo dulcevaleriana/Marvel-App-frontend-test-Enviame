@@ -24,7 +24,7 @@ const Menu = () => {
             )}
             <ul className={activeMenu === true ? "class-menu-smartphone" : " "}>
                 <li>
-                    <Link to="/" onClick={() => setActiveMenu(false)}>
+                    <Link to="/"  onClick={() => setActiveMenu(false)}>
                         Ejercicio3
                     </Link>
                 </li>
