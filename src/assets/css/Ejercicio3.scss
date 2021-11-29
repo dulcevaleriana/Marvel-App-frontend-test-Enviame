@@ -1,0 +1,153 @@
+*{
+    font-family: "Calibri"
+}
+.class-disabled{
+    pointer-events:none;
+}
+
+html {
+    background-image: url($background-image);
+    background-size: cover;
+}
+
+.class-Menu {
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px);
+    padding: 25px;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(2,0,36,0.5) 50%, rgba(0,212,255,0) 100%);
+
+    > img  {
+        width: 100%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-self: right;
+        gap: 20px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #E62429;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+form.MuiBox-root.css-0 {
+    padding: 0 25px;
+
+    .MuiFormControl-root.css-18mw8gn-MuiFormControl-root {
+        display: grid;
+        grid-template-columns: 400px 100px;
+        width: calc(100vw - 50px);
+
+        h4 {
+            grid-column: 1/span 2;
+            color: white;
+            font-size: 26pt;
+            font-family: "Tungsten-Book";
+            margin: 0;
+            text-decoration: underline;
+            margin-bottom: 25px;
+        }
+
+        input.MuiOutlinedInput-input.MuiInputBase-input.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+            background: #030226b3;
+            color: white;
+        }
+
+        button.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButtonBase-root.css-sghohy-MuiButtonBase-root-MuiButton-root {
+            background: red;
+            border-radius: 0 !important;
+        }
+    }
+}
+
+.class-Ejercicio3 {
+    display: grid;
+    grid-template-rows: 170px calc(100vh - 96px - 170px);
+
+    > div:nth-child(2){
+        display: flex;
+        gap: 25px;
+        padding-left: 25px;
+        margin: 25px 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 25px;
+        
+        .class-CardHero {
+            position: relative;
+            background: #030226b3;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            min-width: 490px;
+            box-shadow: 2px 20px 20px 2px #0002;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                grid-row: 1/span 4;
+            }
+
+            > div:nth-child(2){
+                grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+                display: grid;
+                grid-template-rows: 43px calc(100%);
+                color: white;
+                gap: 10px;
+                padding-left: 10px;
+                padding-top: 10px;
+                font-size: 9.5pt;
+
+                input,
+                textarea {
+                    background: #2b16898c;
+                    border: none;
+                    padding-left: 10px;
+                    color:white;
+                }
+
+                input.class-disabled,
+                textarea.class-disabled {
+                    background: transparent;
+                    border: none;
+                }
+
+                textarea {
+                    grid-column: 1 / span 2;
+                }
+
+                button {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100px;
+                    height: 40px;
+                    background: red;
+                    border: none;
+                    color: white;
+                }
+
+                ::placeholder {
+                    color: white;
+                    opacity: 1; 
+                  }
+                  
+                  :-ms-input-placeholder { 
+                    color: white;
+                  }
+                  
+                  ::-ms-input-placeholder { 
+                    color: white;
+                  }
+            }
+        }
+    }
+}
