@@ -35,3 +35,32 @@ html {
         }
     }
 }
+
+.class-Ejercicio3 {
+    display: grid;
+    grid-template-rows: 170px calc(100vh - 96px - 170px);
+
+    > div:nth-child(2){
+        display: flex;
+        gap: 25px;
+        padding-left: 25px;
+        margin: 25px 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 25px;
+        
+        .class-CardHero {
+            position: relative;
+            background: #030226b3;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            min-width: 410px;
+            box-shadow: 2px 20px 20px 2px #0002;
+    
+            img {
+                width: 100%;
+                grid-row: 1/span 4;
+            }
+        }
+    }
+}
