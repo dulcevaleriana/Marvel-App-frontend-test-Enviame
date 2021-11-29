@@ -1,0 +1,68 @@
+/*Web*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/*Tablet*/
+@media only screen and (max-width: 992px){
+    .class-Menu ul{
+        display: none;
+    }
+    .class-Menu svg.svg-inline--fa.fa-bars,
+    .class-Menu svg.svg-inline--fa.fa-xmark {
+        color: white;
+        justify-self: right;
+        z-index: 99;
+    }
+    ul.class-menu-smartphone {
+        display: flex;
+        flex-direction: column;
+        background: #030226b3;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+    }
+}
+
+/*iPad, Nexus 9 – 1*/
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (max-width: 540px) and (max-height: 720px){
+
+}
+
+/*Mini Smartphone*/
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 415px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
+@media only screen and (max-width: 321px){
+
+}
+
+/*safari style MAC IPHONE IOS*/
+@supports (-webkit-hyphens:none){
+    @media only screen and (max-width: 992px) {
+
+    }
+}
