@@ -41,6 +41,13 @@ Smartphone:
 
 Excersice 2: 
 
-Dado los siguientes json (value, json), Se debe generar un script que con estas entradas genere el siguiente resultado...
+"Dado los siguientes json (value, json), Se debe generar un script que con estas entradas genere el siguiente resultado:"
 
 ![image](https://user-images.githubusercontent.com/39066351/143888002-7fe18c03-22d1-40f2-a26f-616354edbda2.png)
+
+Excersice 1: 
+
+"Crear un script (javascript/nodejs) que reciba un rango entre A y B y a partir de este rango se muestren en pantalla los números primos."
+
+![image](https://user-images.githubusercontent.com/39066351/143927593-15486607-b712-419e-9725-1e124fd53b33.png)
+
