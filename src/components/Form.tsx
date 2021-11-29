@@ -17,7 +17,6 @@ const Form = (props:{
                 <FormControl sx={{ width: '25ch' }}>
                     <h4>
                         {props.title}
-                        <hr/>
                     </h4>
                     <OutlinedInput type={props.type} placeholder={props.placeholder} onChange={(b)=>props.onChange(b)}/>
                     <Button variant="contained">{props.buttonName}</Button>
