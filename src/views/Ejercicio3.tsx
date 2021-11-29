@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {getMarvelCharathers} from '../js/getMarvelCharathers';
 import '../assets/css/style.scss';
 import CardHero from '../components/CardHero';
+import Form from '../components/Form';
 
 const Ejercicio3 = () => {
     const [marvelData, setMarvelData] = useState<any | null>(null);
@@ -27,11 +28,13 @@ const Ejercicio3 = () => {
 
     return(
         <div className="class-Ejercicio3">
-            <div>
-                <h4>FIND YOUR HERO</h4>
-                <input onChange={(a) => setheroName(a.target.value)} type="text" placeholder="Write here a hero name"/>
-                <button>search</button>
-            </div>
+            <Form 
+                title="FIND YOUR HERO"
+                onChange={(a) => setheroName(a.target.value)}
+                buttonName="Search"
+                placeholder="Write here a hero name"
+                type="text"
+            />
 
             {marvelData !== null ? (
                 <div>

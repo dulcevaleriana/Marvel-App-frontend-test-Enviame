@@ -14,10 +14,12 @@ const CardHero = (props:{
     return(
         <div className="class-CardHero">
             <img src={props.path + "." + props.extension} alt={props.path + "." + props.extension}/>
-            <input placeholder={props.name} className={props.statusEdit ? "" : "class-disabled"}/>
-            <textarea rows={3} placeholder={props.description === "" ? "this hero don't have a description add one here!!" : props.description} className={props.statusEdit ? "" : "class-disabled"}/>
-            <p>{ChangeDateFormat(props.dateFormat)}</p>
-            <button onClick={props.statusEdit ? (()=>props.boolFalse()) : (()=>props.boolTrue())}>"Edit Hero"</button>
+            <div>
+                <input placeholder={props.name} className={props.statusEdit ? "" : "class-disabled"}/>
+                <p>{ChangeDateFormat(props.dateFormat)}</p>
+                <textarea rows={3} placeholder={props.description === "" ? "this hero don't have a description add one here!!" : props.description} className={props.statusEdit ? "" : "class-disabled"}/>
+                <button onClick={props.statusEdit ? (()=>props.boolFalse()) : (()=>props.boolTrue())}>"Edit Hero"</button>
+            </div>
         </div>
     )
 }
