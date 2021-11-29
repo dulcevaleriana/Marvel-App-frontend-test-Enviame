@@ -19,7 +19,7 @@ En la evaluación consideraremos usabilidad y consistencia en el diseño."
 
 Results:
 
-Web:
+Web: 
 ![image](https://user-images.githubusercontent.com/39066351/143875290-68dba058-57e2-4936-a7c2-679f058cb6c9.png)
 
 Tablet:
