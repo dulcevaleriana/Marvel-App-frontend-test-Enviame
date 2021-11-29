@@ -10,6 +10,15 @@ html {
     background-size: cover;
 }
 
+h4 {
+    color: white;
+    font-size: 26pt;
+    font-family: "Tungsten-Book";
+    margin: 0;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
 .class-Menu {
     display: grid;
     grid-template-columns: 200px calc(100% - 200px);
@@ -49,12 +58,6 @@ form.MuiBox-root.css-0 {
 
         h4 {
             grid-column: 1/span 2;
-            color: white;
-            font-size: 26pt;
-            font-family: "Tungsten-Book";
-            margin: 0;
-            text-decoration: underline;
-            margin-bottom: 25px;
         }
 
         input.MuiOutlinedInput-input.MuiInputBase-input.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
