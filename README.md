@@ -38,3 +38,9 @@ Smartphone:
 ![image](https://user-images.githubusercontent.com/39066351/143875570-1b447c09-daeb-4b82-bb57-d2a0111e3464.png)
 
 ![image](https://user-images.githubusercontent.com/39066351/143875700-ec717d8f-a06d-4804-af83-93a390c58020.png)
+
+Excersice 2: 
+
+Dado los siguientes json (value, json), Se debe generar un script que con estas entradas genere el siguiente resultado...
+
+![image](https://user-images.githubusercontent.com/39066351/143888002-7fe18c03-22d1-40f2-a26f-616354edbda2.png)
